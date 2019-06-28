@@ -15,12 +15,19 @@ pipeline {
             }
        
         stage('Deploy') {
-            steps {
-               withMaven(maven : 'apache-maven-3.3.9'){
-                        bat "mvn deploy"
+           when
+            {
+                not
+                {
+                    brnach "master"
                 }
 
             }
+            steps
+            {
+                echo "hello"
+            }
+            
         }
     }
 }
