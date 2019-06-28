@@ -19,7 +19,7 @@ pipeline {
             {
                 not
                 {
-                    brnach "master"
+                    branch "master"
                 }
 
             }
