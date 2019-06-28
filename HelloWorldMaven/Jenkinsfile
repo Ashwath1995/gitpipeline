@@ -6,7 +6,7 @@ pipeline {
                     echo "Sample scipt "
                 }
             }
-        }
+        
         stage('Second'){
             steps {
                     input "do you want to proceed ?"
